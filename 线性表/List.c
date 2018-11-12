@@ -30,8 +30,12 @@ int GetElement(SqList L,int index,int *e){
 
 
 /*²åÈëÔªËØ*/
-int InsertElement(){
-	
+int InsertElement(SqList L,int index,int e){
+	for(int i=index-1;i>index+1;i--){
+	    L.element[i+1] = L.element[i];
+	}
+	L.element[index-1] = e;
+	L.length++;
 }
 
 
