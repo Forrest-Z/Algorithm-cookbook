@@ -7,8 +7,10 @@ typedef struct SequceList{
 }SqList;
 
 /*获取元素*/
-int GetElement(){
-
+int GetElement(int index){
+	SqList *list;
+    int element;
+    return element=list->element[index-1];
 }
 
 /*插入元素*/
